@@ -2,25 +2,26 @@ import React, { Component } from "react";
 import { AFrameRenderer, Marker } from "react-web-ar";
 
 class Hiro extends Component {
+  //   constructor(props) {
+  //     super(props);
+  //     this.myRef = React.createRef();
+  //   }
+
   render() {
-    return (
+      return (
+
       <AFrameRenderer
-        arToolKit={{
-          sourceType: "webcam",
-          sourceWidth: 1,
-          sourceHeight: 1,
-          displayWidth: 1,
-          displayHeight: 1,canvasWidth: 1,canvasHeight:1
-        }}
-        getSceneRef={ref => (this.scene = ref)}
         inherent={true}
+        embedded
+        arjs="debugUIEnabled: false"
+        vr-mode-ui="enabled: false"
       >
         <Marker parameters={{ preset: "hiro" }}>
           <a-box
-            color="blue"
+            color="pink"
             material="opacity: 1;"
-            position="0 0.09 0"
-            scale="0.4 0.8 0.8"
+            position="0 0.003 0"
+            scale="0.4 0.4 0.4"
           >
             <a-animation
               attribute="rotation"
@@ -32,8 +33,11 @@ class Hiro extends Component {
           </a-box>
         </Marker>
       </AFrameRenderer>
+  
     );
+
   }
+  
 }
 
 export default Hiro;
