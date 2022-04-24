@@ -6,10 +6,16 @@ class App extends Component {
   render() {
     return (
       <AFrameRenderer
-        arToolKit={{
-          sourceType: "webcam",
-        }}
+      arToolKit={{ sourceType: 'webcam'}}
+      getSceneRef={ref => (this.scene = ref)} // 
+      inherent={true}
+      areaLearningButton = {false}
+      performanceProfile ={""}
+    
       >
+        {/* <a-scene> */}
+
+        
         <Marker parameters={{ preset: "hiro" }}>
           <a-box
             color="blue"
@@ -26,6 +32,7 @@ class App extends Component {
             />
           </a-box>
         </Marker>
+        {/* </a-scene> */}
       </AFrameRenderer>
     );
   }
