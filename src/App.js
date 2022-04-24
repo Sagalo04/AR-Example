@@ -5,10 +5,7 @@ import Hiro from './Components/Hiro/Hiro';
 class App extends Component {
   render() {
     return (
-      <div>
-<button>HOLA</button>
         <Hiro />
-      </div>
       
     );
   }

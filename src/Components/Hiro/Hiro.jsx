@@ -8,36 +8,30 @@ class Hiro extends Component {
   //   }
 
   render() {
-      return (
-
+    return (
       <AFrameRenderer
-        inherent={true}
         embedded
         arjs="debugUIEnabled: false"
         vr-mode-ui="enabled: false"
       >
         <Marker parameters={{ preset: "hiro" }}>
-          <a-box
-            color="pink"
-            material="opacity: 1;"
-            position="0 0.003 0"
-            scale="0.4 0.4 0.4"
-          >
-            <a-animation
+        <a-entity
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+        ></a-entity>
+            {/* <a-animation
               attribute="rotation"
               to="360 0 0"
               dur="5000"
               easing="linear"
               repeat="indefinite"
-            />
-          </a-box>
+            /> */}
+          {/* </a-box> */}
         </Marker>
       </AFrameRenderer>
-  
     );
-
   }
-  
 }
 
 export default Hiro;
