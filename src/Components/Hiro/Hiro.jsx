@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { AFrameRenderer, Marker } from "react-web-ar";
-import patt from "../../pattern-Group.patt";
+import patt from "../../pattern-marker.patt";
 
 class Hiro extends Component {
   //   constructor(props) {
