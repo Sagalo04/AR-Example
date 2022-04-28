@@ -14,11 +14,11 @@ class Hiro extends Component {
         <div className="arjs-loader">
           <div>Loading, please wait...</div>
         </div>
-        {/* <AFrameRenderer
+        <AFrameRenderer
           embedded
           arjs="debugUIEnabled: false"
           vr-mode-ui="enabled: false"
-        > */}
+        >
           {/* <Marker
             parameters={{
               preset: "hiro",
@@ -45,13 +45,13 @@ class Hiro extends Component {
               position="0 0 0"
             ></a-entity>
           </a-nft>
-        </AFrameRenderer> */}
+          */}
         
-    <a-scene
+    {/* <a-scene
       vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       embedded
-      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"> */}
       <a-nft
         type="nft"
         url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
@@ -67,7 +67,9 @@ class Hiro extends Component {
           </a-entity>
       </a-nft>
       <a-entity camera></a-entity>
-    </a-scene>
+    {/* </a-scene> */}
+    </AFrameRenderer> 
+
       </>
     );
   }
