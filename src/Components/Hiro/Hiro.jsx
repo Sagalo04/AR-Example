@@ -18,7 +18,7 @@ class Hiro extends Component {
           arjs="debugUIEnabled: false"
           vr-mode-ui="enabled: false"
         >
-          <Marker
+          {/* <Marker
             parameters={{
               preset: "hiro",
             }}
@@ -28,7 +28,7 @@ class Hiro extends Component {
               scale="0.05 0.05 0.05"
               position="0 0 0"
             ></a-entity>
-          </Marker>
+          </Marker> */}
 
           <a-nft
             type="nft"
