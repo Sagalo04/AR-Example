@@ -11,7 +11,7 @@ class Hiro extends Component {
   render() {
     return (
       <>
-        <div className="ararjs-loader">
+        <div className="arjs-loader">
           <div>Loading, please wait...</div>
         </div>
         {/* <AFrameRenderer
