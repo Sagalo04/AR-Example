@@ -64,9 +64,9 @@ class Hiro extends Component {
           >
             <a-entity
               gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-              position='75 150 0'
-              rotation='90 90 90'
-              scale='10 10 10'
+              position='75 75 0'
+              rotation='-90 -90 -90'
+              scale='5 5 5'
             ></a-entity>
           </a-nft>
           <a-entity camera></a-entity>
