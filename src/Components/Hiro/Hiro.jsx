@@ -1,3 +1,4 @@
+import { Loading } from "@nextui-org/react";
 import React, { Component } from "react";
 import { AFrameRenderer, Marker } from "react-web-ar";
 import "./Hiro.css";
@@ -12,7 +13,7 @@ class Hiro extends Component {
     return (
       <>
         <div className="arjs-loader">
-          <div>Loading, please wait...</div>
+          <div><Loading type="points" /></div>
         </div>
         <AFrameRenderer
           vr-mode-ui="enabled: false;"
@@ -63,8 +64,9 @@ class Hiro extends Component {
           >
             <a-entity
               gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-              scale="5 5 5"
-              position="100 100 0"
+              position='75 150 0'
+              rotation='90 90 90'
+              scale='10 10 10'
             ></a-entity>
           </a-nft>
           <a-entity camera></a-entity>
