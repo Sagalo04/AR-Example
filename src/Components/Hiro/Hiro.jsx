@@ -64,6 +64,22 @@ class Hiro extends Component {
           >
             <a-entity
               gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+              position='75 20 0'
+              rotation='90 -90 -90'
+              scale='5 5 5'
+            ></a-entity>
+          </a-nft>
+
+          <a-nft
+            type="nft"
+            url="https://github.com/Sagalo04/AR-Example/tree/master/src/Components/Hiro/agua"
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5"
+          >
+            <a-entity
+              gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
               position='75 75 0'
               rotation='-90 -90 -90'
               scale='5 5 5'
