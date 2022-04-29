@@ -70,7 +70,7 @@ class Hiro extends Component {
             ></a-entity>
           </a-nft>
 
-          <a-nft
+          {/* <a-nft
             type="nft"
             url="https://github.com/Sagalo04/AR-Example/tree/master/src/Components/Hiro/agua"
             smooth="true"
@@ -84,7 +84,7 @@ class Hiro extends Component {
               rotation='-90 -90 -90'
               scale='5 5 5'
             ></a-entity>
-          </a-nft>
+          </a-nft> */}
           <a-entity camera></a-entity>
           {/* </a-scene> */}
         </AFrameRenderer>
