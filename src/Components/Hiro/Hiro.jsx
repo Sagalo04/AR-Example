@@ -10,6 +10,7 @@ class Hiro extends Component {
   //   }
 
   render() {
+    const URL = process.env.PUBLIC_URL + "agua/agua"
     return (
       <>
         <div className="arjs-loader">
@@ -56,7 +57,9 @@ class Hiro extends Component {
       arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"> */}
           <a-nft
             type="nft"
-            url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
+            
+            url={URL}
+            // url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
             smooth="true"
             smoothCount="10"
             smoothTolerance=".01"
