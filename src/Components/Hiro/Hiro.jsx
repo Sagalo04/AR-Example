@@ -88,7 +88,7 @@ class Hiro extends Component {
               scale='5 5 5'
             ></a-entity>
           </a-nft> */}
-          <a-entity camera></a-entity>
+          {/* <a-entity camera></a-entity> */}
           {/* </a-scene> */}
         </AFrameRenderer>
       </>
