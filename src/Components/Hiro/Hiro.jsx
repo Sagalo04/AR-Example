@@ -76,10 +76,9 @@ class Hiro extends Component {
               id="model-1"
               model-1-listener
               cursor="fuse: true; fuseTimeout: 500"
-              position="2 0 0"
+              position="-0.25 0.1 0.5"
               geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
               material="shader: flat; src: #model1"
-              visible="false"
             >
               {/* <a-animation
                 attribute="position"
@@ -94,10 +93,9 @@ class Hiro extends Component {
               id="model-2"
               model-2-listener
               cursor="fuse: true; fuseTimeout: 500"
-              position="2 0 0"
+              position="0.25 0.1 0.5"
               geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
               material="shader: flat; src: #model2"
-              visible="false"
             >
             </a-entity>
             {/* <a-entity
