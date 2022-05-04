@@ -79,14 +79,9 @@ class Hiro extends Component {
               position="-0.25 0.1 0.5"
               geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
               material="shader: flat; src: #model1"
+              scale="5 5 5"
+
             >
-              {/* <a-animation
-                attribute="position"
-                dur="3000"
-                begin="journeyDetailsAnimation"
-                from="1 0.1 0"
-                to="2 0.01 0"
-              /> */}
             </a-entity>
 
             <a-entity
@@ -96,6 +91,8 @@ class Hiro extends Component {
               position="0.25 0.1 0.5"
               geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
               material="shader: flat; src: #model2"
+              scale="5 5 5"
+
             >
             </a-entity>
             {/* <a-entity
