@@ -96,7 +96,7 @@ class Hiro extends Component {
              <a-plane
               id="model-2"
               model-2-listener
-              rotation="0 90 0"
+              rotation="0 90 90"
               // cursor="fuse: true; fuseTimeout: 500"
               position="0 0 0"
               // geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
