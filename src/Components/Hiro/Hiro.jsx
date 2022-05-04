@@ -1,6 +1,8 @@
 import { Loading } from "@nextui-org/react";
 import React, { Component } from "react";
 import { AFrameRenderer, Marker } from "react-web-ar";
+import Modelo1 from "../../Modelo/AGUA 4.png";
+import Modelo2 from "../../Modelo/AGUA 6.png";
 import "./Hiro.css";
 
 class Hiro extends Component {
@@ -10,11 +12,13 @@ class Hiro extends Component {
   //   }
 
   render() {
-    const URL = process.env.PUBLIC_URL + "agua/agua"
+    const URL = process.env.PUBLIC_URL + "agua/agua";
     return (
       <>
         <div className="arjs-loader">
-          <div><Loading type="points" /></div>
+          <div>
+            <Loading type="points" />
+          </div>
         </div>
         <AFrameRenderer
           vr-mode-ui="enabled: false;"
@@ -55,9 +59,9 @@ class Hiro extends Component {
       renderer="logarithmicDepthBuffer: true;"
       embedded
       arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"> */}
+
           <a-nft
             type="nft"
-            
             url={URL}
             // url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
             smooth="true"
@@ -65,12 +69,43 @@ class Hiro extends Component {
             smoothTolerance=".01"
             smoothThreshold="5"
           >
+            <a-assets-item img id="model1" src={Modelo1} />
+            <a-assets-item img id="model2" src={Modelo2} />
+
             <a-entity
+              id="model-1"
+              model-1-listener
+              cursor="fuse: true; fuseTimeout: 500"
+              position="2 0 0"
+              geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
+              material="shader: flat; src: #model1"
+              visible="false"
+            >
+              {/* <a-animation
+                attribute="position"
+                dur="3000"
+                begin="journeyDetailsAnimation"
+                from="1 0.1 0"
+                to="2 0.01 0"
+              /> */}
+            </a-entity>
+
+            <a-entity
+              id="model-2"
+              model-2-listener
+              cursor="fuse: true; fuseTimeout: 500"
+              position="2 0 0"
+              geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
+              material="shader: flat; src: #model2"
+              visible="false"
+            >
+            </a-entity>
+            {/* <a-entity
               gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-              position='20 75 0'
-              rotation='-90 90 -90'
-              scale='5 5 5'
-            ></a-entity>s
+              position="20 75 0"
+              rotation="-90 90 -90"
+              scale="5 5 5"
+            ></a-entity> */}
           </a-nft>
 
           {/* <a-nft
