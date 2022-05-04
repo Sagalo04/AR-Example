@@ -72,16 +72,18 @@ class Hiro extends Component {
             <a-assets-item img id="model1" src={Modelo1} />
             <a-assets-item img id="model2" src={Modelo2} />
 
-            <a-entity
+            <a-plane
               id="model-1"
               model-1-listener
-              cursor="fuse: true; fuseTimeout: 500"
-              position="-0.25 0.1 0.5"
-              geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
-              material="shader: flat; src: #model1"
-              scale="5 5 5"
+              // cursor="fuse: true; fuseTimeout: 500"
+              position="15 0 5"
+              rotation="-90 90 90"
+              // geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
+              // material="shader: flat; src: #model1"
+              src="#model1"
+              scale="100 100 100"
             >
-            </a-entity>
+            </a-plane>
 
             {/* <a-entity
               id="model-2"
