@@ -77,11 +77,11 @@ class Hiro extends Component {
               model-1-listener
               cursor="fuse: true; fuseTimeout: 500"
               position="15 100 0"
-              rotation="-90 90 90"
+              rotation="-90 90 -90"
               geometry="primitive: cylinder; height: 0.1; radius: 0.15"
               material="shader: flat; src: #model1"
               // src="#model1"
-              scale="100 100 100"
+              scale="100 0 100"
             >
             </a-entity>
 
@@ -98,13 +98,13 @@ class Hiro extends Component {
              <a-entity
               id="model-2"
               model-2-listener
-              rotation="-90 90 90"
+              rotation="-90 90 -90"
               cursor="fuse: true; fuseTimeout: 500"
               position="0 0 0"
               geometry="primitive: cylinder; height: 0.1; radius: 0.15"
               material="shader: flat; src: #model2"
               // src="#model2"
-              scale="100 100 100"
+              scale="100 0 100"
             >
             </a-entity>
             {/* <a-entity
