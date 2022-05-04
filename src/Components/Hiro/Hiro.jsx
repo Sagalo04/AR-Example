@@ -76,7 +76,7 @@ class Hiro extends Component {
               id="model-1"
               model-1-listener
               // cursor="fuse: true; fuseTimeout: 500"
-              position="15 0 100"
+              position="15 100 0"
               rotation="-90 90 90"
               // geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
               // material="shader: flat; src: #model1"
