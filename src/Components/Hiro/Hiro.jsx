@@ -80,21 +80,30 @@ class Hiro extends Component {
               geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
               material="shader: flat; src: #model1"
               scale="5 5 5"
-
             >
             </a-entity>
 
-            <a-entity
+            {/* <a-entity
               id="model-2"
               model-2-listener
               cursor="fuse: true; fuseTimeout: 500"
               position="0 0 0"
               geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
               material="shader: flat; src: #model2"
-              scale="15 15 15"
-
+              scale="100 100 100"
             >
-            </a-entity>
+            </a-entity>            */}
+             <a-plane
+              id="model-2"
+              model-2-listener
+              // cursor="fuse: true; fuseTimeout: 500"
+              position="0 0 0"
+              // geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
+              // material="shader: flat; src: #model2"
+              src="#model2"
+              scale="100 100 100"
+            >
+            </a-plane>
             {/* <a-entity
               gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
               position="20 75 0"
