@@ -106,7 +106,7 @@ class Hiro extends Component {
               scale="272 0 272"
             ></a-entity> */}
             <a-entity
-              gltf-model="../../Modelo/Agua/Agua.gltf"
+              gltf-model="https://arjs-cors-proxy.herokuapp.com/https://github.com/Sagalo04/AR-Example/blob/master/src/Modelo/Agua/Agua.gltf"
               position="0 0 0"
               rotation="-90 90 -90"
               scale="100 100 100"
