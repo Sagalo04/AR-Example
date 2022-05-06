@@ -213,23 +213,23 @@
     "images" : [
         {
             "mimeType" : "image/png",
-            "name" : "AGUA 6 (1)",
-            "uri" : "Textures/AGUA%206%201.png"
+            "name" : "AGUA6",
+            "uri" : "Textures/AGUA6.png"
         },
         {
             "mimeType" : "image/png",
-            "name" : "AGUA 4 (1)",
-            "uri" : "Textures/AGUA%204%201.png"
+            "name" : "AGUA4",
+            "uri" : "Textures/AGUA4.png"
         },
         {
             "mimeType" : "image/png",
-            "name" : "AGUA 1 (1)",
-            "uri" : "Textures/AGUA%201%201.png"
+            "name" : "AGUA1",
+            "uri" : "Textures/AGUA1.png"
         },
         {
             "mimeType" : "image/png",
-            "name" : "AGUA 22",
-            "uri" : "Textures/AGUA%2022.png"
+            "name" : "AGUA22",
+            "uri" : "Textures/AGUA22.png"
         }
     ],
     "accessors" : [
