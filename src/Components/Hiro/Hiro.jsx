@@ -74,7 +74,7 @@ class Hiro extends Component {
             <a-assets-item img id="model2" src={Modelo2} />
             <a-assets-item img id="model3" src={Modelo3} />
 
-            <a-entity
+            {/* <a-entity
               id="model-4"
               model-4-listener
               cursor="fuse: true; fuseTimeout: 500"
@@ -104,13 +104,13 @@ class Hiro extends Component {
               material="shader: flat; src: #model1"
               // src="#model2"
               scale="272 0 272"
-            ></a-entity>
+            ></a-entity> */}
             <a-entity
               // gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
               gltf-model="../../Modelo/untitled.gltf"
               material="shader: flat;src: #model1"
               position="20 75 0"
-              rotation="-90 90 -90"
+              // rotation="-90 90 -90"
               scale="5 0 5"
             ></a-entity>
           </a-nft>
