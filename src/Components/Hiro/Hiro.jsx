@@ -117,7 +117,7 @@ class Hiro extends Component {
               gltf-model={URL2}
               position="0 0 0"
               rotation="-90 90 -90"
-              scale="5 1 5"
+              scale="1 1 1"
             ></a-entity>
             <a-entity
               gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
