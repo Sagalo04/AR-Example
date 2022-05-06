@@ -71,8 +71,9 @@ class Hiro extends Component {
             smoothThreshold="5"
           >
             <a-assets-item img id="model1" src={Modelo1} />
+            <a-assets-item img id="model1" src={Modelo1} />
             <a-assets-item img id="model2" src={Modelo2} />
-            <a-assets-item img id="model3" src={Modelo3} />
+            <a-assets-item response-type="arraybuffer" id="model4" src="../../Modelo/Agua/Agua.gltf" />
 
             {/* <a-entity
               id="model-4"
@@ -106,7 +107,7 @@ class Hiro extends Component {
               scale="272 0 272"
             ></a-entity> */}
             <a-entity
-              gltf-model="../../Modelo/scene.gltf"
+              gltf-model="#model4"
               position="0 0 0"
               rotation="-90 90 -90"
               scale="100 100 100"
