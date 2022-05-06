@@ -106,12 +106,12 @@ class Hiro extends Component {
               scale="100 0 100"
             ></a-entity>
             <a-entity
-              gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-              // gltf-model="../../Modelo/untitled.gltf"
-              // material="shader: flat;src: #model1"
+              // gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+              gltf-model="../../Modelo/untitled.gltf"
+              material="shader: flat;src: #model1"
               position="20 75 0"
               rotation="-90 90 -90"
-              scale="100 0 100"
+              scale="5 0 5"
             ></a-entity>
           </a-nft>
 
