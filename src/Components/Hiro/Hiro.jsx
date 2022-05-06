@@ -4,6 +4,7 @@ import { AFrameRenderer, Marker } from "react-web-ar";
 import Modelo1 from "../../Modelo/AGUA 4 (1).png";
 import Modelo2 from "../../Modelo/AGUA 6 (1).png";
 import Modelo3 from "../../Modelo/AGUA 22.png";
+import Modelo4 from "../../Modelo/scene.gltf";
 import "./Hiro.css";
 
 class Hiro extends Component {
@@ -70,10 +71,15 @@ class Hiro extends Component {
             smoothTolerance=".01"
             smoothThreshold="5"
           >
-            <a-assets-item img id="model1" src={Modelo1} />
-            <a-assets-item img id="model1" src={Modelo1} />
-            <a-assets-item img id="model2" src={Modelo2} />
-            <a-assets-item response-type="arraybuffer" id="model4" src="../../Modelo/Agua/Agua.gltf" />
+            {/* <a-assets> */}
+              <a-assets-item img id="model1" src={Modelo1} />
+              <a-assets-item img id="model2" src={Modelo2} />
+              <a-assets-item
+                response-type="arraybuffer"
+                id="model4"
+                src={Modelo4}
+              />
+            {/* </a-assets> */}
 
             {/* <a-entity
               id="model-4"
@@ -107,16 +113,16 @@ class Hiro extends Component {
               scale="272 0 272"
             ></a-entity> */}
             <a-entity
-              gltf-model="#model4"
+              gltf-model="model4"
               position="0 0 0"
               rotation="-90 90 -90"
               scale="100 100 100"
             ></a-entity>
             <a-entity
               gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-              position='0 0 0'
-              rotation='-90 90 -90'
-              scale='5 5 5'
+              position="0 0 0"
+              rotation="-90 90 -90"
+              scale="5 5 5"
             ></a-entity>
           </a-nft>
 
