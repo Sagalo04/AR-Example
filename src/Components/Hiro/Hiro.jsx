@@ -99,9 +99,9 @@ class Hiro extends Component {
               model-2-listener
               // rotation="-90 90 -90"
               cursor="fuse: true; fuseTimeout: 500"
-              position="250 -50 50"
+              position="250 -50 -100"
               geometry="primitive: cylinder; height: 0.1; radius: 1"
-              material="shader: flat; src: #model2"
+              material="shader: flat; src: #model1"
               // src="#model2"
               scale="272 0 272"
             ></a-entity>
