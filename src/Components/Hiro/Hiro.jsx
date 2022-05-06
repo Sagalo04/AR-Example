@@ -1,9 +1,9 @@
 import { Loading } from "@nextui-org/react";
 import React, { Component } from "react";
 import { AFrameRenderer, Marker } from "react-web-ar";
-import Modelo1 from "../../Modelo/AGUA 4.png";
-import Modelo2 from "../../Modelo/AGUA 6.png";
-import Modelo3 from "../../Modelo/AGUA 2.png";
+import Modelo1 from "../../Modelo/AGUA 4 (1).png";
+import Modelo2 from "../../Modelo/AGUA 6 (1).png";
+import Modelo3 from "../../Modelo/AGUA 22.png";
 import "./Hiro.css";
 
 class Hiro extends Component {
@@ -81,7 +81,7 @@ class Hiro extends Component {
               position="200 0 0"
               geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
               material="shader: flat; src: #model3"
-              scale="200 0 200"
+              scale="329 0 465"
             ></a-entity>
             <a-entity
               id="model-1"
@@ -90,20 +90,20 @@ class Hiro extends Component {
               position="200 50 50"
               // rotation="0 90 -90"
               geometry="primitive: cylinder; height: 0.1; radius: 1"
-              material="shader: flat; src: #model1"
+              material="shader: flat; src: #model2"
               // src="#model1"
-              scale="50 0 50"
+              scale="140 0 140"
             ></a-entity>
             <a-entity
               id="model-2"
               model-2-listener
               // rotation="-90 90 -90"
               cursor="fuse: true; fuseTimeout: 500"
-              position="170 -50 0"
+              position="250 -50 50"
               geometry="primitive: cylinder; height: 0.1; radius: 1"
               material="shader: flat; src: #model2"
               // src="#model2"
-              scale="50 0 50"
+              scale="272 0 272"
             ></a-entity>
             <a-entity
               // gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
