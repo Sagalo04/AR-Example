@@ -72,72 +72,22 @@ class Hiro extends Component {
             smoothTolerance=".01"
             smoothThreshold="5"
           >
-            {/* <a-assets> */}
-              <a-assets-item img id="model1" src={Modelo1} />
-              <a-assets-item img id="model2" src={Modelo2} />
-              <a-assets-item
-                response-type="arraybuffer"
-                id="model4"
-                src={URL2}
-              />
-            {/* </a-assets> */}
-
-            {/* <a-entity
-              id="model-4"
-              model-4-listener
-              cursor="fuse: true; fuseTimeout: 500"
-              position="200 0 0"
-              geometry="primitive: box; height: 0.1; depth: 1.5; rotation: 90 0 0;"
-              material="shader: flat; src: #model3"
-              scale="329 0 465"
-            ></a-entity>
-            <a-entity
-              id="model-1"
-              model-1-listener
-              cursor="fuse: true; fuseTimeout: 500"
-              position="200 50 50"
-              // rotation="0 90 -90"
-              geometry="primitive: cylinder; height: 0.1; radius: 1"
-              material="shader: flat; src: #model2"
-              // src="#model1"
-              scale="140 0 140"
-            ></a-entity>
-            <a-entity
-              id="model-2"
-              model-2-listener
-              // rotation="-90 90 -90"
-              cursor="fuse: true; fuseTimeout: 500"
-              position="250 -50 -100"
-              geometry="primitive: cylinder; height: 0.1; radius: 1"
-              material="shader: flat; src: #model1"
-              // src="#model2"
-              scale="272 0 272"
-            ></a-entity> */}
             <a-entity
               gltf-model={URL2}
               position="50 0 50"
               rotation="-90 90 -90"
-              scale="0.5 0.5 0.5"
+              scale="0.6 0.6 0.6"
             ></a-entity>
 
-          </a-nft>
-
-          {/* <a-nft
-            type="nft"
-            url="https://github.com/Sagalo04/AR-Example/tree/master/src/Components/Hiro/agua"
-            smooth="true"
-            smoothCount="10"
-            smoothTolerance=".01"
-            smoothThreshold="5"
-          >
             <a-entity
               gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-              position='75 75 0'
-              rotation='-90 -90 -90'
-              scale='5 5 5'
+              scale="5 5 5"
+              position="60 0 60"
+              rotation="-90 90 -90"
             ></a-entity>
-          </a-nft> */}
-          <a-entity camera></a-entity>
+          </a-nft>
+
+          {/* <a-entity camera></a-entity> */}
           {/* </a-scene> */}
         </AFrameRenderer>
       </>
