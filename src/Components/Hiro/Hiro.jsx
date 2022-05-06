@@ -117,7 +117,7 @@ class Hiro extends Component {
               gltf-model={URL2}
               position="50 0 50"
               rotation="-90 90 -90"
-              scale="1 1 1"
+              scale="0.5 0.5 0.5"
             ></a-entity>
 
           </a-nft>
