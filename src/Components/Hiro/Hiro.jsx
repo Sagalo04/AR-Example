@@ -92,18 +92,18 @@ class Hiro extends Component {
               geometry="primitive: cylinder; height: 0.1; radius: 1"
               material="shader: flat; src: #model1"
               // src="#model1"
-              scale="100 0 100"
+              scale="50 0 50"
             ></a-entity>
             <a-entity
               id="model-2"
               model-2-listener
               // rotation="-90 90 -90"
               cursor="fuse: true; fuseTimeout: 500"
-              position="200 0 0"
+              position="170 -50 0"
               geometry="primitive: cylinder; height: 0.1; radius: 1"
               material="shader: flat; src: #model2"
               // src="#model2"
-              scale="100 0 100"
+              scale="50 0 50"
             ></a-entity>
             <a-entity
               // gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
