@@ -15,6 +15,7 @@ class Hiro extends Component {
 
   render() {
     const URL = process.env.PUBLIC_URL + "agua/agua";
+    const URL2 = process.env.PUBLIC_URL + "Modelo/scene2.glb";
     return (
       <>
         <div className="arjs-loader">
@@ -77,7 +78,7 @@ class Hiro extends Component {
               <a-assets-item
                 response-type="arraybuffer"
                 id="model4"
-                src={Modelo4}
+                src={URL2}
               />
             {/* </a-assets> */}
 
@@ -113,7 +114,7 @@ class Hiro extends Component {
               scale="272 0 272"
             ></a-entity> */}
             <a-entity
-              gltf-model="model4"
+              gltf-model={URL2}
               position="0 0 0"
               rotation="-90 90 -90"
               scale="100 100 100"
