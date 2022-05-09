@@ -16,3 +16,17 @@
   font-size: 1.25em;
   color: white;
 }
+
+.visibilidad{
+  z-index: 99;
+  position: absolute;
+  top: 90%;
+  right: 0;
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+}
+
+.visibilidadNo{
+  display: none;
+}
