@@ -34,7 +34,6 @@
 
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-
   </head>
   <body style="margin: 0">
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -48,6 +47,15 @@
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
-    -->        
+    -->
+    <script>
+      AFRAME.registerComponent("markerhandler", {
+        init: function () {
+          this.el.sceneEl.addEventListener("markerFound", () => {
+            console.log("markerFound");
+          });
+        },
+      });
+    </script>
   </body>
 </html>

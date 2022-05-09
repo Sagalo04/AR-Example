@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import { Button, Link } from "@nextui-org/react";
 import React, { Component } from "react";
 import Hiro from "./Components/Hiro/Hiro";
+import boton from "./AGUA 5.png"
 
 class App extends Component {
   render() {
@@ -21,7 +22,8 @@ class App extends Component {
             }}
 
           >
-            <Button css={{ bgColor: "#c4302b" }} icon={<Icon icon="bxs:right-arrow" color="white" height="24" />}>Go to Music Video</Button>
+            <img src={boton} alt="" style={{height:"85px"}}/>
+            {/* <Button css={{ bgColor: "#c4302b" }} icon={<Icon icon="bxs:right-arrow" color="white" height="24" />}>Go to Music Video</Button> */}
           </Link>
           {/* <a className="button" href="https://facebook.com">
             Go to
