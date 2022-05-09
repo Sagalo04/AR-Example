@@ -1,10 +1,6 @@
 import { Loading } from "@nextui-org/react";
 import React, { Component } from "react";
 import { AFrameRenderer, Marker } from "react-web-ar";
-import Modelo1 from "../../Modelo/AGUA 4 (1).png";
-import Modelo2 from "../../Modelo/AGUA 6 (1).png";
-import Modelo3 from "../../Modelo/AGUA 22.png";
-import Modelo4 from "../../Modelo/scene.gltf";
 import "./Hiro.css";
 
 class Hiro extends Component {
@@ -15,7 +11,7 @@ class Hiro extends Component {
 
   render() {
     const URL = process.env.PUBLIC_URL + "agua/agua";
-    const URL2 = process.env.PUBLIC_URL + "Modelo/scene2.glb";
+    const URL2 = process.env.PUBLIC_URL + "Modelo/finalscene.glb";
     return (
       <>
         <div className="arjs-loader">
