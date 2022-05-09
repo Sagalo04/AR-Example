@@ -70,7 +70,7 @@ class Hiro extends Component {
           >
             <a-entity
               gltf-model={URL2}
-              position="0 0 0"
+              position="50 25 0"
               rotation="-90 90 -90"
               scale="0.6 0.6 0.6"
             ></a-entity>
