@@ -13,10 +13,10 @@ class Hiro extends Component {
   render() {
     const URLagua = process.env.PUBLIC_URL + "Nft/agua/agua";
     const URLAguaCap = process.env.PUBLIC_URL + "Nft/AguaCap/AguaCap";
-    const URLAguaMayus = process.env.PUBLIC_URL + "Nft/AguaMayus/AguaMayus";
+    // const URLAguaMayus = process.env.PUBLIC_URL + "Nft/AguaMayus/AguaMayus";
     const URLwater = process.env.PUBLIC_URL + "Nft/water/water";
     const URLWaterCap = process.env.PUBLIC_URL + "Nft/WaterCap/WaterCap";
-    const URLWaterMayus = process.env.PUBLIC_URL + "Nft/WaterMayus/WaterMayus";
+    // const URLWaterMayus = process.env.PUBLIC_URL + "Nft/WaterMayus/WaterMayus";
 
     const URL2 = process.env.PUBLIC_URL + "Modelo/finalscene.glb";
 
@@ -95,17 +95,7 @@ class Hiro extends Component {
           >
             {entity}
           </a-nft>
-          <a-nft
-            markerhandler
-            type="nft"
-            url={URLAguaMayus}
-            smooth="true"
-            smoothCount="10"
-            smoothTolerance=".01"
-            smoothThreshold="5"
-          >
-            {entity}
-          </a-nft>
+
           <a-nft
             markerhandler
             type="nft"
@@ -128,17 +118,7 @@ class Hiro extends Component {
           >
             {entity}
           </a-nft>
-          <a-nft
-            markerhandler
-            type="nft"
-            url={URLWaterMayus}
-            smooth="true"
-            smoothCount="10"
-            smoothTolerance=".01"
-            smoothThreshold="5"
-          >
-            {entity}
-          </a-nft>
+          
 
           {/* <a-entity camera></a-entity> */}
         </AFrameRenderer>
