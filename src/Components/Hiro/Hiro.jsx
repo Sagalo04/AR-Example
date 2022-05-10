@@ -2,7 +2,7 @@ import { Link, Loading } from "@nextui-org/react";
 import React, { Component } from "react";
 import { AFrameRenderer } from "react-web-ar";
 import "./Hiro.css";
-import boton from "../../AGUA 5.png";
+import boton from "../../botonRA.png";
 
 class Hiro extends Component {
   constructor(props) {
@@ -55,8 +55,8 @@ class Hiro extends Component {
           vr-mode-ui="enabled: false;"
           renderer="logarithmicDepthBuffer: true;"
           embedded
-          // arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-          arjs="sourceType: webcam;debugUIEnabled: false;"
+          arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+          // arjs="sourceType: webcam;debugUIEnabled: false;"
         >
           <a-nft
             markerhandler
@@ -69,9 +69,9 @@ class Hiro extends Component {
           >
             <a-entity
               gltf-model={URL2}
-              position="100 25 0"
+              position="50 25 0"
               rotation="-90 90 -90"
-              scale="0.6 0.6 0.6"
+              scale="0.5 0.5 0.5"
             ></a-entity>
           </a-nft>
 
