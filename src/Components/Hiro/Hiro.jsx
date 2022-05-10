@@ -53,7 +53,7 @@ class Hiro extends Component {
         </div>
         <AFrameRenderer
           vr-mode-ui="enabled: false;"
-          // renderer="logarithmicDepthBuffer: true;"
+          renderer="logarithmicDepthBuffer: true;"
           embedded
           // arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
           arjs="sourceType: webcam;debugUIEnabled: false;"
