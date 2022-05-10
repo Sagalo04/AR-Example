@@ -84,7 +84,7 @@ class Hiro extends Component {
           >
             {entity}
           </a-nft>
-          <a-nft
+          {/* <a-nft
             markerhandler
             type="nft"
             url={URLAguaCap}
@@ -94,7 +94,7 @@ class Hiro extends Component {
             smoothThreshold="5"
           >
             {entity}
-          </a-nft>         
+          </a-nft>          */}
 
           <a-entity camera></a-entity>
         </AFrameRenderer>
