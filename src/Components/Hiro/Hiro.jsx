@@ -11,7 +11,13 @@ class Hiro extends Component {
   }
 
   render() {
-    const URL = process.env.PUBLIC_URL + "agua/agua";
+    const URLagua = process.env.PUBLIC_URL + "Nft/agua/agua";
+    const URLAguaCap = process.env.PUBLIC_URL + "Nft/AguaCap/AguaCap";
+    const URLAguaMayus = process.env.PUBLIC_URL + "Nft/AguaMayus/AguaMayus";
+    const URLwater = process.env.PUBLIC_URL + "Nft/water/water";
+    const URLWaterCap = process.env.PUBLIC_URL + "Nft/WaterCap/WaterCap";
+    const URLWaterMayus = process.env.PUBLIC_URL + "Nft/WaterMayus/WaterMayus";
+
     const URL2 = process.env.PUBLIC_URL + "Modelo/finalscene.glb";
 
     // eslint-disable-next-line no-undef
@@ -19,14 +25,23 @@ class Hiro extends Component {
       init: function () {
         this.el.sceneEl.addEventListener("markerFound", () => {
           console.log("markerFound");
-         document.getElementById("linkk").className = "visibilidad";
+          document.getElementById("linkk").className = "visibilidad";
         });
         this.el.sceneEl.addEventListener("markerLost", () => {
-         document.getElementById("linkk").className = "visibilidadNo";
-         console.log("markerLost");
+          document.getElementById("linkk").className = "visibilidadNo";
+          console.log("markerLost");
         });
       },
     });
+
+    const entity = (
+      <a-entity
+        gltf-model={URL2}
+        position="50 0 0"
+        rotation="-90 90 -90"
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+    );
 
     return (
       <>
@@ -43,7 +58,7 @@ class Hiro extends Component {
           // }}
           id="linkk"
         >
-          <img src={boton} alt="" style={{ height: "75px" }} />
+          <img src={boton} alt="" style={{ height: "85px" }} />
           {/* <Button css={{ bgColor: "#c4302b" }} icon={<Icon icon="bxs:right-arrow" color="white" height="24" />}>Go to Music Video</Button> */}
         </Link>
         <div className="arjs-loader">
@@ -61,18 +76,68 @@ class Hiro extends Component {
           <a-nft
             markerhandler
             type="nft"
-            url={URL}
+            url={URLagua}
             smooth="true"
             smoothCount="10"
             smoothTolerance=".01"
             smoothThreshold="5"
           >
-            <a-entity
-              gltf-model={URL2}
-              position="50 25 0"
-              rotation="-90 90 -90"
-              scale="0.5 0.5 0.5"
-            ></a-entity>
+            {entity}
+          </a-nft>
+          <a-nft
+            markerhandler
+            type="nft"
+            url={URLAguaCap}
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5"
+          >
+            {entity}
+          </a-nft>
+          <a-nft
+            markerhandler
+            type="nft"
+            url={URLAguaMayus}
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5"
+          >
+            {entity}
+          </a-nft>
+          <a-nft
+            markerhandler
+            type="nft"
+            url={URLwater}
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5"
+          >
+            {entity}
+          </a-nft>
+          <a-nft
+            markerhandler
+            type="nft"
+            url={URLWaterCap}
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5"
+          >
+            {entity}
+          </a-nft>
+          <a-nft
+            markerhandler
+            type="nft"
+            url={URLWaterMayus}
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5"
+          >
+            {entity}
           </a-nft>
 
           {/* <a-entity camera></a-entity> */}
