@@ -37,7 +37,7 @@ class Hiro extends Component {
     const entity = (
       <a-entity
         gltf-model={URL2}
-        position="50 25 0"
+        position="100 0 0"
         rotation="-90 90 -90"
         scale="0.5 0.5 0.5"
       ></a-entity>
