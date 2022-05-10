@@ -63,10 +63,10 @@ class Hiro extends Component {
             markerhandler
             type="nft"
             url={URL}
-            smooth="true"
-            smoothCount="10"
-            smoothTolerance=".01"
-            smoothThreshold="5"
+            // smooth="true"
+            // smoothCount="10"
+            // smoothTolerance=".01"
+            // smoothThreshold="5"
           >
             <a-entity
               gltf-model={URL2}
