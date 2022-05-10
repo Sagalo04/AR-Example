@@ -53,20 +53,20 @@ class Hiro extends Component {
         </div>
         <AFrameRenderer
           vr-mode-ui="enabled: false;"
-          renderer="logarithmicDepthBuffer: true;"
+          // renderer="logarithmicDepthBuffer: true;"
           embedded
-          hello-world
-          arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+          // arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+          arjs="sourceType: webcam;debugUIEnabled: false;"
         >
           <a-nft
             ref={this.myRef}
             markerhandler
             type="nft"
             url={URL}
-            // smooth="true"
-            // smoothCount="10"
-            // smoothTolerance=".01"
-            // smoothThreshold="5"
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5"
           >
             <a-entity
               gltf-model={URL2}
