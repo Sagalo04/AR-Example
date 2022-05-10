@@ -94,33 +94,9 @@ class Hiro extends Component {
             smoothThreshold="5"
           >
             {entity}
-          </a-nft>
+          </a-nft>         
 
-          <a-nft
-            markerhandler
-            type="nft"
-            url={URLwater}
-            smooth="true"
-            smoothCount="10"
-            smoothTolerance=".01"
-            smoothThreshold="5"
-          >
-            {entity}
-          </a-nft>
-          <a-nft
-            markerhandler
-            type="nft"
-            url={URLWaterCap}
-            smooth="true"
-            smoothCount="10"
-            smoothTolerance=".01"
-            smoothThreshold="5"
-          >
-            {entity}
-          </a-nft>
-          
-
-          {/* <a-entity camera></a-entity> */}
+          <a-entity camera></a-entity>
         </AFrameRenderer>
       </>
     );
