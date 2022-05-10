@@ -59,7 +59,6 @@ class Hiro extends Component {
           arjs="sourceType: webcam;debugUIEnabled: false;"
         >
           <a-nft
-            ref={this.myRef}
             markerhandler
             type="nft"
             url={URL}
@@ -70,7 +69,7 @@ class Hiro extends Component {
           >
             <a-entity
               gltf-model={URL2}
-              position="50 25 0"
+              position="-20 25 0"
               rotation="-90 90 -90"
               scale="0.6 0.6 0.6"
             ></a-entity>
